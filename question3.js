@@ -7,9 +7,9 @@ function addNumbers(array) {
 //FIND MAX NUMBER FUNCTION
 function findMaxNumber() {
   let max = -Infinity;
-  for (let i = 0; i < arguments.length; i++) {
-    if (arguments[i] > max) {
-      max = arguments[i];
+  for (const element of arguments) {
+    if (element > max) {
+      max = element;
     }
   }
   return max;

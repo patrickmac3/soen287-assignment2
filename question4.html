@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4</title>
+    <style>
+        table, #output {
+            margin-left: 30px;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        table {
+            border: 1px solid black;
+        }
+    </style>
+  </head>
+  <body>
+    <form id="orderBooks">
+     </form>
+      <table>
+        <caption><h1>Order Books Online</h1></caption>
+            <tr>
+                <th><b>Bookddds</b></th>
+                <th><b>Quantity</b></th>
+                <th><b>Price</b></th>
+            </tr>
+            <tr>
+                <td>Basic Web Programming</td>
+                <td><input type="text" id="webProg" form="orderBooks" size="3"></td>
+                <td>$19.99$</td>
+            </tr>
+            <tr>
+                <td>Intro to PHP</td>
+                <td><input type="text" id="introPHP" form="orderBooks" size="3" ></td>
+                <td>$86.00</td>
+            </tr>
+            <tr>
+                <td>Advanced JQuery</td>
+                <td> <input type="text" id="advJQuery" form="orderBooks" size="3"></td>
+                <td>$55.00</td>
+            </tr>
+            <tr style="height: 50px;">
+                <td colspan="3"> <button type="submit" form="orderBooks">Calculate the order</button></td>
+            </tr>
+        </table>
+
+    <div id="output"></div>
+    <script src="question4.js"></script>
+  </body>
+</html>
