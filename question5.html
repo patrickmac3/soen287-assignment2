@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exercise 5</title>
+    <meta charset= "UTF-8">
+</head>
+<body>
+    <p><strong>User information: </strong></p>
+    <div id="content">
+
+    </div>
+
+    <script>
+
+        getUserInfo();
+/*         Prompts the user with the following 2  questions:
+            1- What is you full name
+            2- How old are you
+        Output (string) : Hi, my name is NAME and I'm XX years old */
+        function getUserInfo(){
+
+          const name = prompt('What is your full name?');
+          const age = prompt('How old are you?');  
+          const content = "Hi, my name is " + name + " and I'm " + age + 'years old';
+
+          const div = document.getElementById('content');
+          div.innerHTML = content;
+        }
+    </script>
+</body>
+</html>
