@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+  </head>
+  <body>
+    <!-- A -->
+    <h2>addNumbers</h2>
+    <p>addNumbers([0, 1, 2, 3, 4, 5, 6,7 ,8 , 9]) = <span id="addNumbers"></span></p>
+    <!-- B -->
+    <h2>findMaxNumber</h2>
+    <p>findMaxNumber(1, 4, 6, 7, 8, 0, 4, 12, 19, 18) = <span id="findMaxNumber"></span></p>
+    <!-- C -->
+    <h2>addOnlyNumbers</h2>
+    <p>addOnlyNumbers([1, '2.0 birds', '10.0 elephants', 5, 6, 7, 8, '100 dogs']) = <span id="addOnlyNumbers"></span></p>
+    <!-- D -->
+    <h2>getDigits</h2>
+    <p>getDigits("1 school 2 campuses 3 departments 5 thousandstudents 25") = <span id="getDigits"></span></p>
+    <!-- E -->
+    <h2>reverseString</h2>
+    <p>reverseString("See you later!") = <span id="reverseString"></span></p>
+    <!-- F -->
+    <h2>getCurrentDate</h2>
+    <p>getCurrentDate() = <span id="getCurrentDate"></span></p>
+
+    <script src="question3.js"></script>
+    <script>
+      // A - Add Numbers function
+      const array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+      const addNumbersResult = addNumbers(array);
+      const addNumbersElement = document.getElementById("addNumbers");
+      addNumbersElement.innerHTML = addNumbersResult;
+
+      // B - Find MAx Number function 
+      const findMaxNumberResult = findMaxNumber(1, 4, 6, 7, 8, 0, 4, 12, 19, 18);
+      const findmaxnumberElement = document.getElementById('findMaxNumber');
+      findmaxnumberElement.innerHTML = findMaxNumberResult;
+
+      // C - Add Only Numbers function 
+      const mixedArray = [1, '2.0 birds', '10.0 elephants', 5, 6, 7, 8, '100 dogs'];
+      const addOnlyNumbersResult = addOnlyNumbers(mixedArray);
+      const addonlynumbersElement = document.getElementById('addOnlyNumbers');
+      addonlynumbersElement.innerHTML = addOnlyNumbersResult;
+
+      // D - Get Digits function 
+      const str = "1 school 2campuses 3departments 5 thousand students 25";
+      const getDigitsResult = getDigits(str);
+      const getDigitsElement = document.getElementById('getDigits');
+      getDigitsElement.innerHTML = getDigitsResult;
+
+      // E - Reverse String function
+      const string = 'See you later!';
+      const reverseStringResult = reverseString(string);
+      const reverseStringElement = document.getElementById('reverseString');
+      reverseStringElement.innerHTML = reverseStringResult;
+
+      // F - Get Current Date function 
+      const getCurrentDateResult = getCurrentDate();
+      const getCurrentDateElement = document.getElementById('getCurrentDate');
+      getCurrentDateElement.innerHTML = getCurrentDateResult;
+
+    </script>
+  </body>
+</html>

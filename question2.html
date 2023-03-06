@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+</head>
+<body>
+    <h1>Javascript Array</h1>
+    <h2>Print the elements of an array using toString()</h2>
+    <p id="toString"></p>
+    <h2>Print the elements of an array using join()</h2>
+    <p id="join"></p>
+    <h2>Print the elements of an array in the format of index: value</h2>
+    <p id="indexValue"></p>
+    <script>
+        const fruits = ['Banana', 'Orange', 'Apple', 'Mango'];
+        document.getElementById('toString').innerHTML = fruits.toString();
+        document.getElementById('join').innerHTML = fruits.join('&');
+        const element3 = document.getElementById('indexValue');
+        let text = ' ';
+        let index = 0;
+        fruits.forEach(function(item){
+            text += fruits.indexOf(item) + ': ' + item + '<br>';
+        });     
+        element3.innerHTML = text;
+   
+    </script>
+</body>
+</html>
