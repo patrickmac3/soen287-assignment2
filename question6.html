@@ -39,31 +39,29 @@
     </p>
   </div>
   <script>
-
     slideshow();
-
     function slideshow(){
-
+        // element variables
         const slides = document.querySelectorAll('div.mySlides');
+        const length =  slides.length;
         const previous = document.getElementById('previous');
         const next = document.getElementById('next');
+        // Index of slides
         var slideIndex = 0;
-        
         slides[slideIndex].style.display = 'block';
+        // Switch to next slide
         previous.addEventListener("click", () => {
             slides[slideIndex].style.display = 'none';
-            slideIndex = slideIndex > 0 ? slideIndex -= 1 : slideIndex = 3;
-            slideIndex = slideIndex % 4;
+            slideIndex = slideIndex > 0 ? slideIndex -= 1 : slideIndex = length - 1;
+            slideIndex = slideIndex % length;
             slides[slideIndex].style.display = 'block';
         });
-
+        // Switch to previous slide
         next.addEventListener("click", () => {
-            slides[slideIndex].style.display = 'none';
-            slideIndex = (slideIndex + 1) % 4;
-            slides[slideIndex].style.display = 'block';
+            slides[slideIndex].style.display = 'none'; 
+            slideIndex = (slideIndex + 1) % length; 
+            slides[slideIndex].style.display = 'block'; 
         });
-
-      
     }
 
   </script>
